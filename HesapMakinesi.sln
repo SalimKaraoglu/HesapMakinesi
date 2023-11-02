@@ -1,5 +1,14 @@
 
 
+
+Console.WriteLine(
+   "\"██╗░░██╗███████╗░██████╗░█████╗░██████╗░  ███╗░░░███╗░█████╗░██╗░░██╗██╗███╗░░██╗███████╗░██████╗██╗\\n\"\r\n\"" +
+   "  ██║░░██║██╔════╝██╔════╝██╔══██╗██╔══██╗  ████╗░████║██╔══██╗██║░██╔╝██║████╗░██║██╔════╝██╔════╝██║\\n\"\r\n\"" +
+   "  ███████║█████╗░░╚█████╗░███████║██████╔╝  ██╔████╔██║███████║█████═╝░██║██╔██╗██║█████╗░░╚█████╗░██║\\n\"\r\n\"" +
+   "  ██╔══██║██╔══╝░░░╚═══██╗██╔══██║██╔═══╝░  ██║╚██╔╝██║██╔══██║██╔═██╗░██║██║╚████║██╔══╝░░░╚═══██╗██║\\n\"\r\n\"" +
+   "  ██║░░██║███████╗██████╔╝██║░░██║██║░░░░░  ██║░╚═╝░██║██║░░██║██║░╚██╗██║██║░╚███║███████╗██████╔╝██║\\n\"\r\n\"" +
+   "  ╚═╝░░╚═╝╚══════╝╚═════╝░╚═╝░░╚═╝╚═╝░░░░░  ╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝╚═╝░░╚══╝╚══════╝╚═════╝░╚═╝\\n\")");
+
 Console.WriteLine("İşlem Seçiniz => [Dört İşlem '1' , Geometrik İşlem '2']");
 string matematikselİslem = Console.ReadLine();
 
@@ -9,11 +18,9 @@ if (matematikselİslem == "1") // Cebirsel İşlemler
     double sayi1 = Convert.ToInt32(Console.ReadLine());
     Console.Write("Lütfen İkinci Sayıyı Giriniz: ");
     double sayi2 = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("İşlem Giriniz" +
-        "[1) Toplama : '+' , " +
-        " 2) Çıkartma : '-' , " +
-        " 3) Çarpma : '*' , " +
-        " 4) Bölme : '/' ]");
+
+    Console.WriteLine($"====================\nİşlem Giriniz: \nToplam : '+'\nÇıkarma : '-'\nÇarpma : '*'\nBölme : '/'");
+    
     string islem = Console.ReadLine();
 
     if (sayi1 > sayi2 && islem == "-") // Çıkarma İşlemi
@@ -96,6 +103,12 @@ if (matematikselİslem == "2") // Geometrik İşlemler
 
 Console.WriteLine("Çıkmak İçin Bir Tuşa Basınız!");
 Console.ReadKey();
+
+
+
+
+
+
 
 
 
